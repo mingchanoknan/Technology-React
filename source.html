@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+    <link rel="icon" href="1611079.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+      integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";
+      html,
+      aside {
+        font-family: "Mitr", sans-serif;
+      }
+      html {
+        background-color: #6b3d7ae5;
+      }
+      .ref {
+        color: white;
+      }
+      .ref:hover {
+        color: #00d8ff !important;
+      }
+      .logo {
+        background-color: #6b3d7a;
+        width: 100%;
+      }
+      .logo:hover {
+        background-color: #6b3d7a !important;
+      }
+      .has-text-weight-medium {
+        color: #00d8ff;
+      }
+      .column {
+        padding: 0px !important;
+      }
+      .imageStyle {
+        width: 256px;
+        height: 256px;
+      }
+      .color-text-nav {
+        color: white !important;
+      }
+      .manu-nav-1:hover {
+        background-color: #f7abc7 !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      .manu-nav-2:hover {
+        background-color: #fde780 !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      .manu-nav-3:hover {
+        background-color: #c5ea8b !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      mark {
+        box-shadow: 4px 4px 4px #47394d;
+        border-radius: 20px;
+        background-color: #0dc5ef;
+      }
+      .footer {
+        background-color: #aeeee7 !important;
+        padding: 1em 0.75em 1em !important;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+      }
+      .container.is-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      @media screen and (max-width: 754px) {
+        .footer {
+          background-color: #aeeee7 !important;
+          padding: 1em 0.75em 1em !important;
+          bottom: 0;
+          width: 100%;
+          position: relative;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="columns">
+      <div
+        class="column is-one-fifth is-narrow"
+        style="background-color: #b494c1"
+      >
+        <aside class="menu" style="display: block; background-color: #b494c1">
+          <a class="navbar-item logo" href="index.html">
+            <img src="1611079.png" />
+            <p class="is-size-4 has-text-weight-medium ml-1">React</p>
+          </a>
+
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-1 sidebar-item"
+            href="what_is_react.php"
+          >
+            คืออะไร
+          </a>
+          <a class="navbar-item color-text-nav m-2 manu-nav-2" href="work.html">
+            การใช้งาน
+          </a>
+          <div>
+            <a
+              class="navbar-item color-text-nav m-2 manu-nav-3"
+              href="web_example.html"
+            >
+              ตัวอย่างเว็บไซต์
+            </a>
+          </div>
+        </aside>
+      </div>
+      <div class="column">
+        <div class="container is-fluid mt-4 pt-4">
+          <p class="title has-text-centered is-3 mt-3 mb-6">
+            <mark class="p-5 has-text-light">แหล่งที่มาของข้อมูล</mark>
+          </p>
+          <div class="ml-6">
+            <a class="ref is-size-5" target="_blank" href="https://reactjs.org/"
+              ><li class="mb-3">
+                React – A JavaScript library for building user interfaces
+              </li></a
+            >
+            <a
+              class="ref is-size-5"
+              href="https://www.designil.com/react-%e0%b8%84%e0%b8%b7%e0%b8%ad%e0%b8%ad%e0%b8%b0%e0%b9%84%e0%b8%a3/?fbclid=IwAR2ZtrSBArx-6WwzDQ7qJNixm_9Ia4w85YbSldLP7mlWpjnF1hFUBd3X23o"
+              target="_blank"
+              ><li class="mb-3">
+                React คืออะไร? ไขข้อสงสัยสำหรับมือใหม่ + แนวทางการหัด React
+                ตั้งแต่เริ่มต้น
+              </li></a
+            >
+            <a
+              class="ref is-size-5"
+              href="https://www.borntodev.com/2020/07/15/react-101/"
+              target="_blank"
+              ><li class="mb-3">
+                React 101 – BorntoDev เริ่มต้นเรียน เขียนโปรแกรม ขั้นเทพ !
+              </li></a
+            >
+            <a
+              class="ref is-size-5"
+              target="_blank"
+              href="https://www.thaiprogrammer.org/2018/01/learn-react-in-5-mins/"
+              ><li class="mb-3">เรียนรู้ React.js ใน 5 นาที</li></a
+            >
+            <a
+              class="ref is-size-5"
+              target="_blank"
+              href="https://medium.com/stand-up-code/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-web-application-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-react-js-%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97-%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%9A-react-js-70f7881e272a"
+              ><li class="mb-3">
+                สร้าง Web Application ด้วย React.JS ภาคปฐมบท รู้จักกับ React.js
+              </li></a
+            >
+            <a
+              class="ref is-size-5"
+              target="_blank"
+              href="https://blog.skooldio.com/7-famous-companies-that-uses-react/?fbclid=IwAR05h6kadkcPHIVcxN8TCnNGDUVkseKyedT63ZnvDBKmefMNuinr_b2y-uc"
+              ><li class="mb-3">7 บริษัทระดับโลกที่ใช้ React พัฒนาเว็บ</li></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <img src="logo.png" width="50" height="50" />
+        <p>
+          <strong>จัดทำโดย</strong> นางสาว ชนกนันท์ นุ่มน้อย
+          <strong>รหัสนักศึกษา</strong> 63070027 <br />
+          <strong>ช่องทางการติดต่อ</strong>
+        </p>
+        <a href="https://www.facebook.com/tarunee.madee.5" target="_blank"
+          ><img src="facebook.png" width="40" height="40"
+        /></a>
+        <a href="https://www.instagram.com/bunny_bell3/" target="_blank"
+          ><img src="instagram.png" width="40" height="40"
+        /></a>
+      </div>
+    </footer> -->
+    <div class="container is-fluid">
+      <div class="columns is-gapless">
+        <div
+          class="column is-one-fifth"
+          style="background-color: #b494c1 !important"
+        >
+          <aside class="menu">
+            <a class="navbar-item logo" href="main.html">
+              <img src="1611079.png" />
+              <p class="is-size-4 has-text-weight-medium ml-1">React</p>
+            </a>
+
+            <a
+              class="navbar-item color-text-nav m-2 manu-nav-1 sidebar-item"
+              href="what_is_react.php"
+            >
+              คืออะไร
+            </a>
+            <a
+              class="navbar-item color-text-nav m-2 manu-nav-2"
+              href="work.php"
+            >
+              การใช้งาน
+            </a>
+            <div>
+              <a
+                class="navbar-item color-text-nav m-2 manu-nav-3"
+                href="web_example.html"
+              >
+                ตัวอย่างเว็บไซต์
+              </a>
+            </div>
+          </aside>
+        </div>
+        <div class="column">
+          <div class="container is-fluid mt-6">
+            <p class="title has-text-centered is-3 mt-3 mb-6">
+              <mark class="p-5 has-text-light">แหล่งที่มาของข้อมูล</mark>
+            </p>
+            <div class="box m-5" style="background-color: #b494c1 !important">
+              <a
+                class="ref is-size-5"
+                target="_blank"
+                href="https://reactjs.org/"
+              >
+                <li class="mb-3">
+                  React – A JavaScript library for building user interfaces
+                </li></a
+              >
+              <a
+                class="ref is-size-5"
+                href="https://www.designil.com/react-%e0%b8%84%e0%b8%b7%e0%b8%ad%e0%b8%ad%e0%b8%b0%e0%b9%84%e0%b8%a3/?fbclid=IwAR2ZtrSBArx-6WwzDQ7qJNixm_9Ia4w85YbSldLP7mlWpjnF1hFUBd3X23o"
+                target="_blank"
+                ><li class="mb-3">
+                  React คืออะไร? ไขข้อสงสัยสำหรับมือใหม่ + แนวทางการหัด React
+                  ตั้งแต่เริ่มต้น
+                </li></a
+              >
+              <a
+                class="ref is-size-5"
+                href="https://www.borntodev.com/2020/07/15/react-101/"
+                target="_blank"
+                ><li class="mb-3">
+                  React 101 – BorntoDev เริ่มต้นเรียน เขียนโปรแกรม ขั้นเทพ !
+                </li></a
+              >
+              <a
+                class="ref is-size-5"
+                target="_blank"
+                href="https://www.thaiprogrammer.org/2018/01/learn-react-in-5-mins/"
+                ><li class="mb-3">เรียนรู้ React.js ใน 5 นาที</li></a
+              >
+              <a
+                class="ref is-size-5"
+                target="_blank"
+                href="https://medium.com/stand-up-code/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87-web-application-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-react-js-%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%9B%E0%B8%90%E0%B8%A1%E0%B8%9A%E0%B8%97-%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%9A-react-js-70f7881e272a"
+                ><li class="mb-3">
+                  สร้าง Web Application ด้วย React.JS ภาคปฐมบท รู้จักกับ
+                  React.js
+                </li></a
+              >
+              <a
+                class="ref is-size-5"
+                target="_blank"
+                href="https://blog.skooldio.com/7-famous-companies-that-uses-react/?fbclid=IwAR05h6kadkcPHIVcxN8TCnNGDUVkseKyedT63ZnvDBKmefMNuinr_b2y-uc"
+                ><li class="mb-3">7 บริษัทระดับโลกที่ใช้ React พัฒนาเว็บ</li></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <img src="logo.png" width="50" height="50" />
+        <p>
+          <strong>จัดทำโดย</strong> นางสาว ชนกนันท์ นุ่มน้อย
+          <strong>รหัสนักศึกษา</strong> 63070027 <br />
+          <strong>ช่องทางการติดต่อ</strong>
+        </p>
+        <a href="https://www.facebook.com/tarunee.madee.5" target="_blank"
+          ><img src="facebook.png" width="40" height="40"
+        /></a>
+        <a href="https://www.instagram.com/bunny_bell3/" target="_blank"
+          ><img src="instagram.png" width="40" height="40"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+    <link rel="icon" href="1611079.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+      integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body,
+      button {
+        font-family: "Mitr", sans-serif;
+      }
+
+      .color-nav {
+        background-color: #b494c1;
+      }
+      .logo {
+        background-color: #6b3d7a;
+      }
+      .logo:hover {
+        background-color: #6b3d7a !important;
+      }
+      .has-text-weight-medium {
+        color: #00d8ff;
+      }
+      .imageStyle {
+        width: 256px;
+        height: 256px;
+      }
+      .color-text-nav {
+        color: white !important;
+      }
+      .manu-nav-1:hover {
+        background-color: #f7abc7 !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      .manu-nav-2:hover {
+        background-color: #fde780 !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      .manu-nav-3:hover {
+        background-color: #c5ea8b !important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+      .bntB:hover{
+background-color: #fd91b9 !important;
+      }
+      .color-bnt:hover{
+        background-color: #50def7;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .color-bnt {
+        background-color: #00d8ff;
+      }
+      .is-white {
+        color: white;
+      }
+      .has-text-black-bis {
+        text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+      }
+      mark {
+        background-color: rgba(255, 255, 0, 0.295);
+      }
+      .topic {
+        color: #06c0e0;
+      }
+      .footer {
+        background-color: #aeeee7 !important;
+        padding: 1em 0.75em 1em !important;;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <div id="loader"></div> -->
+    <div>
+    <nav
+      class="navbar color-nav is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand ml-6">
+        <a class="navbar-item logo" href="main.html">
+          <img src="1611079.png" />
+          <p class="is-size-4 has-text-weight-medium ml-1">React</p>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-1"
+            href="what_is_react.php"
+          >
+            คืออะไร
+          </a>
+
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-2"
+            href="work.php"
+          >
+            การใช้งาน
+          </a>
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-3"
+            href="web_example.html"
+          >
+            ตัวอย่างเว็บไซต์
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info is-light" href="source.html">
+                <strong>แหล่งที่มาของข้อมูล</strong>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container is-fluid" style="background-color: #6b3d7aec">
+      <center>
+        <figure class="image imageStyle" style="justify-content: center">
+          <img class="pt-6" src="1611079.png" />
+        </figure>
+      </center>
+      <h1
+        class="center m-5 is-size-1 has-text-black-bis has-text-weight-semibold"
+      >
+        React คืออะไร?
+      </h1>
+      <div class="columns is-mobile is-multiline is-centered pb-5">
+        <div class="column is-narrow center">
+          <p
+            class="bd-notification is-primary"
+            style="text-decoration-line: underline"
+          >
+            <a id="scroll" class="is-white">เทคโนโลยีที่ใช้</a>
+          </p>
+        </div>
+        <div class="column is-narrow">
+          <p class="bd-notification is-primary">
+            <button class="button color-bnt" onclick="location.href='what_is_react.php';">React คืออะไร?</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="m-3">
+      <div class="box m-6 p-6" id="start">
+        <p>
+          <strong class="is-size-3 topic">React</strong>
+          เป็นเทคโนโลยีหนึ่งที่มาแรงมาก ๆ ในปัจจุบัน
+          ไปงานเกี่ยวกับทำเว็บไซต์งานไหนก็มีคนพูดถึงก็คงหนีไม่พ้น React
+          ซึ่งกระแสมาแรงมากทั้งในไทยและต่างประเทศ ก่อนที่เราจะเข้าเรื่องว่า
+          React คืออะไร เรามาดูกันก่อนว่าการทำเว็บแบบดั้งเดิมที่เราทำ
+          มันเป็นอย่างไร และ
+          <mark>การทำเว็บแบบใหม่ด้วย React มันต่างจากเดิมอย่างไร?</mark>
+        </p>
+        <p class="is-size-3 center mt-4 has-text-black">
+          " ยุคของการทำเว็บไซต์ "
+        </p>
+        <p><mark class="is-size-4 " > การทำเว็บไซต์แบบเดิม </mark></p>
+        <p class="mt-2">
+          การทำเว็บไซต์ด้วยเทคนิคเดิม คือ HTML, CSS, JavaScript, PHP (หรือภาษา
+          Backend ภาษาใดภาษาหนึ่ง) ส่วนใหญ่ “การทำงานทั้งหมดจะอยู่ที่ Server”
+        </p>
+        <center>
+          <img
+            class="m-4"
+            style="
+              width: 35em;
+              height: auto;
+              border-radius: 20px;
+              box-shadow: 4px 4px 10px rgba(24, 23, 23, 0.5);
+            "
+            src="https://miro.medium.com/max/1400/1*IuunkDUaDY7sOHGyLKlN7g.png"
+          />
+        </center>
+        <ol>
+          <li>User เข้าเว็บไซต์ก็จะส่งไปบอก Server</li>
+          <li>
+            Server (PHP) จะประมวลผลผ่านภาษา Backend ว่า User
+            เข้าหน้านี้แล้วต้องให้อะไรบ้าง เช่น ต้องการบทความ 10 บทความล่าสุด
+          </li>
+          <li>
+            Server นำข้อมูลที่เก็บไว้ออกมาจาก Database (เช่น MySQL)
+            แล้ววางลงไปในเทมเพลต HTML ที่เตรียมไว้
+          </li>
+          <li>Server ส่ง HTML กลับไปหา User</li>
+        </ol>
+        <p class="is-size-5 ml-6 mt-5"><u>ข้อดี</u>ของเว็บแบบเดิม :</p>
+        <li>
+          <strong>ตัว Infrastructure ถูกมาก</strong> – เดี๋ยวนี้หา Web Hosting
+          ที่รองรับ PHP & MySQL ได้ในราคาไม่กี่ร้อยต่อปี
+          ทำให้เราประหยัดค่าใช้จ่ายที่ต้องชำระทุกเดือน ทุกปีไปได้เยอะ
+        </li>
+        <li>
+          <strong>มีระบบดี ๆ ให้เลือกใช้งานเยอะ</strong> – ตัวอย่างเช่น
+          WordPress ซึ่งเป็นระบบสำหรับสร้างเว็บไซต์ยอดนิยม และ WooCommerce
+          ระบบร้านค้าออนไลน์ที่ทำให้ใครก็สามารถเปิดขายสินค้าบน Internet ได้
+        </li>
+        <p class="is-size-5 ml-6 mt-3"><u>ข้อเสีย</u>ของเว็บแบบเดิม :</p>
+        <li>
+          <strong>Server ทำงานหนัก</strong> – เพราะต้องจัดการทั้ง Flow
+          ข้อมูลในระบบด้วย และการนำข้อมูลมาวางใน HTML เพื่อส่งกลับไปหา User
+          ทุกครั้ง ทำให้การส่งข้อมูลแต่ละครั้งยิ่งใหญ่มาก
+        </li>
+        <p class="mt-4">
+          จึงเป็นที่มาของแนวคิดว่า จะให้ Server ทำงานเบาลง
+          โดยการเก็บหน้าตาเว็บไซต์ไว้ใน JavaScript ที่โหลดบน Web Browser
+          บนเครื่อง User ทั้งหมด แล้วให้ Server ทำหน้าที่ส่งเฉพาะไฟล์ข้อมูลเบา ๆ
+          ให้ JavaScript ไปจัดการแสดงผลแทน นั่นก็คือเว็บไซต์สมัยใหม่
+        </p>
+
+        <div class="mt-5">
+          <mark class="is-size-4"> การทำเว็บไซต์แบบใหม่ </mark>
+        </div>
+        <p>
+          &emsp;&emsp;ไอเดียนี้เมื่อก่อนเราเรียกว่า AJAX ก็คือ ใช้ JavaScript
+          ส่ง Request ไปขอข้อมูลจาก Server แล้ว Server
+          ตอบกลับมาเป็นข้อมูลอย่างเดียว เราค่อยใช้ JavaScript
+          เอาข้อมูลมาแสดงอีกที อย่างไรก็ตาม พอข้อมูลถูกส่งจาก Server มาให้ Web
+          Browser แล้ว ก็เกิดปัญหาว่า “แล้วจะจัดการข้อมูลบน Web Browser อย่างไร”
+          ซึ่งเมื่อก่อนไม่มี Library คอยช่วยเหลือด้านการแสดงผล
+          เลยทำให้โค้ดพันกันมั่วไปหมด (เค้าเรียก Spaghetti Code =
+          โค้ดพันกันเหมือนเส้นสปาเกตตี้นั่นเอง) JavaScript Framework สมัยใหม่
+          เช่น React ก็เลยออกมาเพื่อช่วยให้เราจัดการเรื่องการดึงข้อมูล
+          การแสดงผลข้อมูลในเว็บให้ง่ายขึ้นนั่นเอง สรุปคือ
+          การทำงานของเว็บไซต์สมัยใหม่ จะมีการทำงานแบบนี้:
+        </p>
+        <center>
+          <img
+            class="m-4"
+            style="
+              width: 35em;
+              height: auto;
+              border-radius: 20px;
+              box-shadow: 4px 4px 10px rgba(24, 23, 23, 0.5);
+            "
+            src="https://miro.medium.com/max/1400/1*7U9RxbCaGEspT3ATXUr5lg.png"
+          />
+        </center>
+        
+        <ol>
+          <li>User เข้าเว็บไซต์เรา</li>
+          <li>
+            โหลด HTML, CSS, JS ขึ้นมาก่อน แล้ว JavaScript ค่อยขอบทความล่าสุดจาก
+            Server
+          </li>
+          <li>Server ได้รับคำขอ ก็ส่งไปขอข้อมูลจากฐานข้อมูลอีกที</li>
+          <li>Database ส่งข้อมูลกลับมาให้ Server</li>
+          <li>
+            Server ส่งข้อมูลกลับไปให้ Browser ทาง API โดยส่วนใหญ่จะส่งเป็น JSON
+            เพราะ JavaScript สามารถนำไปใช้งานต่อได้ง่าย
+          </li>
+          <li>JavaScript นำข้อมูลที่ได้รับมาจัดการแสดงผลบนหน้าเว็บไซต์</li>
+        </ol>
+        <p class="is-size-5 ml-6 mt-5"><u>ข้อดี</u>ของเว็บแบบใหม่ :</p>
+
+        <li>
+          <strong>เว็บโหลดเร็วมาก</strong> – เวลา User เข้าเว็บเรา เค้าจะได้
+          HTML, CSS, JavaScript ไปแสดงผลได้ทันที แล้วก็รอ JavaScript
+          ไปขอข้อมูลก้อนเล็ก ๆ จาก Server มาแสดงผล
+          ก็ได้ออกมาเป็นหน้าเว็บไซต์สมบูรณ์แล้ว
+        </li>
+        <li>
+          <storng>ภาษาที่ต้องเรียนน้อยลง</storng> – ปัจจุบันเราสามารถเขียน
+          JavaScript เป็น Server ได้แล้ว (ใช้ NodeJS) ทำให้เราไม่ต้องเรียนภาษา
+          Backend เช่น PHP, Ruby, Python เลย และในทางกลับกัน ถ้าเราเขียนภาษา
+          Backend ได้อยู่แล้ว เราก็ไม่จำเป็นต้องเรียน NodeJS เช่นกัน
+        </li>
+        <li>
+          <strong>Library เล็ก ๆ เยอะ</strong> – การทำเว็บสมัยใหม่ใช้ Library
+          เล็ก ๆ มาทำงานร่วมกัน ทำให้ถ้าเราไม่ชอบตัวไหนก็เปลี่ยนได้
+          หรือจะเพิ่มส่วนไหนก็ทำได้สะดวก มีความยืดหยุ่นสูง
+        </li>
+        <p class="is-size-5 ml-6 mt-5"><u>ข้อเสีย</u>ของเว็บแบบใหม่ :</p>
+        <li>
+          <strong>คนเก่าต้องปรับแนวคิด</strong> –
+          คนที่ย้ายมาจากสายดั้งเดิมจะต้องปรับแนวคิด
+          เพราะการทำเว็บแบบใหม่เราไม่ได้เอาทุกอย่างไปเทที่ Server อีกแล้ว
+          แน่นอนว่าต้องมีหลายคนที่มองว่าไม่อยากปรับเพราะชินกับแบบเก่าแล้ว
+        </li>
+        <li>
+          <strong>Library เล็ก ๆ เยอะ</strong> – อันนี้เป็นทั้งข้อดีและข้อเสีย
+          ด้วยความที่มันมี Library หลายตัวทำให้ต้องเป็นคนขยันเรียนรู้สิ่งใหม่ ๆ
+          พอสมควร ซึ่งไม่เหมาะกับทุกคน
+        </li>
+      </div>
+    </div>
+    <!-- เปลี่ยนหน้า -->
+    <div class="mr-6 mb-6" style="display: flex; justify-content: flex-end">
+      <button
+        class="button is-size-5 bntB"
+        style="
+          background-color: #f7abc7;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+          border-radius: 20px;
+        "
+        onclick="location.href='what_is_react.php';">
+        React คืออะไร
+      </button>
+    </div>
+    
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <img src="logo.png" width="50" height="50" />
+        <p>
+          <strong>จัดทำโดย</strong> นางสาว ชนกนันท์ นุ่มน้อย <strong>รหัสนักศึกษา</strong> 63070027 <br />
+          <strong>ช่องทางการติดต่อ</strong>
+        </p>
+        <a href="https://www.facebook.com/tarunee.madee.5" target="_blank"><img src="facebook.png" width="40" height="40"></a>
+        <a href="https://www.instagram.com/bunny_bell3/" target="_blank"><img src="instagram.png" width="40" height="40"></a>
+      </div>
+    </footer>
+  </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+            $target.style.backgroundColor = "#b494c1";
+          });
+        });
+      }
+    });
+
+    $(document).ready(function () {
+      $("#scroll").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#start").offset().top - 10,
+          },
+          1000
+        );
+      });
+    });
+
+    
+// function myFunction() {
+//   myVar = setTimeout(direct, 2000);
+// }
+
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("myDiv").style.display = "block";
+
+// }
+// function direct(){
+//   window.location.replace("http://www.w3schools.com");
+// }
+  </script>
+</html>

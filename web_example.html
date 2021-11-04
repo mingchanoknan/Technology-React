@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="icon" href="1611079.png" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mitr&display=swap"
+    rel="stylesheet"
+  />
+   <style>
+       html{
+        background-color: #e0fafc;
+       }
+        body,
+        button {
+          font-family: "Mitr", sans-serif;
+        }
+  
+        .color-nav {
+          background-color: #b494c1;
+        }
+        .logo {
+          background-color: #6b3d7a;
+        }
+        .logo:hover {
+          background-color: #6b3d7a !important;
+        }
+        .has-text-weight-medium {
+          color: #00d8ff;
+        }
+        .imageStyle {
+          width: 256px;
+          height: 256px;
+        }
+        .color-text-nav {
+          color: white !important;
+        }
+        .manu-nav-1:hover {
+          background-color: #f7abc7 !important;
+          color: black !important;
+          border-radius: 10px;
+          box-shadow: 2px 2px 4px #47394d;
+        }
+        
+        .manu-nav-2:hover {
+          background-color: #fde780 !important;
+          color: black !important;
+          border-radius: 10px;
+          box-shadow: 2px 2px 4px #47394d;
+        }
+        .manu-nav-3 {
+        background-color: #c5ea8b!important;
+        color: black !important;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #47394d;
+      }
+        .manu-nav-3:hover {
+          background-color: #c5ea8b !important;
+          color: black !important;
+          border-radius: 10px;
+          box-shadow: 2px 2px 4px #47394d;
+          cursor: default;
+        }
+        .bntB1:hover:hover{
+  background-color: #f3d758 !important;
+        }
+        .bntB2:hover:hover{
+  background-color: #bea2da !important;
+        }
+        .color-bnt:hover{
+          background-color: #50def7;
+        }
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .color-bnt {
+          background-color: #00d8ff;
+        }
+        .is-white {
+          color: white;
+        }
+        .has-text-black-bis {
+          text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+        }
+        mark {
+          
+          box-shadow: 4px 4px 4px rgba(7, 0, 0, 0.5);
+          border-radius: 10px;
+          
+        }
+        .topic {
+          background-color: #c6ea8b7c;
+          border-radius: 15px;
+          
+        }
+        .footer {
+          background-color: #aeeee7 !important;
+          padding: 1em 0.75em 1em !important;;
+        }
+      </style>
+</head>
+<body>
+    <nav
+      class="navbar color-nav is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand ml-6">
+        <a class="navbar-item logo" href="main.html">
+          <img src="1611079.png" />
+          <p class="is-size-4 has-text-weight-medium ml-1">React</p>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-1"
+            href="what_is_react.php"
+          >
+            คืออะไร
+          </a>
+
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-2"
+            href="work.php">
+            การใช้งาน
+          </a>
+          <a
+            class="navbar-item color-text-nav m-2 manu-nav-3"
+            
+          >
+            ตัวอย่างเว็บไซต์
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-info is-light" href="source.html">
+                <strong>แหล่งที่มาของข้อมูล</strong>
+                
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container is-fluid mt-6 pt-4 ">
+        <p class="is-size-2 mt-5 has-text-weight-semibold has-text-centered ">บริษัทระดับโลกที่ใช้ <b style="color: #00b0cf;">"React"</b>  พัฒนาเว็บ</p>
+        <p class="mt-3 has-text-centered topic p-4">ปัจจุบันบริษัท Tech มากมายใช้ React เพื่อพัฒนาเว็บไซต์ของตัวเอง เราจะมาดูกันว่าบริษัทไหนบ้างที่ใช้ React และอะไรที่ทำให้บริษัทยักษ์ใหญ่นี้เลือกที่จะใช้ React กัน</p>
+    <div class="box m-6 p-5">
+
+        <p class="is-size-3 has-text-centered has-text-weight-semibold"><mark class="pl-3 pr-3 " style="background-color: #f7abc7;">Facebook</mark></p>
+        <p class="mt-2"> &emsp;&emsp;บริษัทแรกที่เราจะไม่พูดถึงไม่ได้เลยคือ Facebook ผู้คิดค้นและสร้าง React ให้เราใช้งานกันอยู่ทุกวันนี้ โดยที่เว็บของ <a href="https://www.facebook.com/" target="_blank">Facebook</a> นั้นสามารถ Interact กับ User ได้โดยทันทีไม่จำเป็นต้อง Reload ทั้ง Page นอกจากนี้ <a href="https://apps.apple.com/app/id284882215?fbclid=IwAR15HOBhrymscvGbJ1DD5qmzUpmjIMFHahuboKP9nclMy0sM6845dmaa4IQ" target="_blank">App Faceboo</a>k และ <a href="https://www.instagram.com/" target="_blank">Instagram</a> ก็ถูกสร้างด้วย React Native เช่นกัน
+    </p>
+    <div class="columns mt-2 p-2">
+        <div class="column">
+            <img src="https://www.grappik.com/wp-content/uploads/2019/04/1x-1-3.webp">
+            <p class="has-text-centered is-size-7 has-text-grey">Facebook</p>
+        </div>
+        <div class="column">
+            <img src="https://g.foolcdn.com/image/?url=https%3A//g.foolcdn.com/editorial/images/632584/instagram-screenshots.png&w=2000&op=resize">
+            <p class="has-text-centered is-size-7 has-text-grey">Instagram</p>
+        </div>
+    </div>
+    </div>
+    <div class="box m-6 p-5">
+        <p class="is-size-3 has-text-centered has-text-weight-semibold"><mark class="pl-3 pr-3 " style="background-color: #fde98e;">Atlassian</mark></p>
+        <p class="mt-2"> &emsp;&emsp;ผู้เป็นเจ้าตลาดเครื่องมือในการบริหารงานเพิ่ม Productivity ยอดนิยม เช่น   <a href="https://www.atlassian.com/software/jira" target="_blank">JIRA,</a> <a href="https://www.atlassian.com/software/confluence" target="_blank">Confluence</a>, <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>, <a href="https://trello.com/" target="_blank">Trello</a>, <a href="https://www.atlassian.com/partnerships/slack" target="_blank">Hipchat</a> ซึ่งแน่นอนว่า App เหล่านี้ก็ถูกสร้างด้วย React ด้วยเช่นกัน โดยที่ Atlassian เลือกใช้ React ในการพัฒนาเพราะ React นั้นสามารถพัฒนาได้ง่าย แถมยังรองรับได้หลายอุปกรณ์ เช่น ไม่ว่าจะเป็นบนโทรศัพท์ หรือคอมพิวเตอร์ก็ใช้งานได้</p>
+        <div class="columns mt-2 p-2">
+            <div class="column">
+                <img src="https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:858144d1-e857-4ab8-8861-2a71112e7a37/JSW-tour-board.png?cdnVersion=55" style="width: 90%; height: auto;">
+                <p class="has-text-centered is-size-7 has-text-grey">JIRA</p>
+            </div>
+            
+            <div class="column">
+                <img style="width: 90%; height: auto;" src="https://merehead.com/blog/wp-content/uploads/GitHub-vs-Bitbucket-Which-Web-Service-for-Hosting-it-Projects-is-Better3-1.jpg">
+                <p class="has-text-centered is-size-7 has-text-grey">Bitbucket</p>
+            </div>
+        </div>
+        <div class="columns mt-2 p-2">
+            <div class="column">
+                <img style="width: 90%; height: auto;" src="https://techcrunch.com/wp-content/uploads/2019/04/Atlassian_Confluence_analytics.png?resize=1536,960">
+                <p class="has-text-centered is-size-7 has-text-grey">Confluence</p>
+            </div>
+            <div class="column">
+                <img style="width: 90%; height: auto;" src="https://images.ctfassets.net/rz1oowkt5gyp/7pYWhpQ3vnntxoShaImNws/777fabbf069416489167ab92027ce086/board.png?w=1200&fm=webp">
+                <p class="has-text-centered is-size-7 has-text-grey">Trello</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box m-6 p-5">
+        <p class="is-size-3 has-text-centered has-text-weight-semibold"><mark class="pl-3 pr-3 " style="background-color: #f7abc7;">UberEats</mark></p>
+<p class="mt-2"> &emsp;&emsp;แอปพลิเคชันสั่งอาหารเจ้าแรกๆ ของโลกที่ได้รับความนิยมอย่างมากในอเมริกา ได้เลือกใช้ React เพื่อพัฒนาเว็บไซต์สำหรับการหาร้านอาหาร, สั่งอาหาร รวมถึงการ Track Order ต่างๆ ส่วนเหตุผลที่ <a href="https://apps.apple.com/app/id1058959277?fbclid=IwAR2L6zh7pk47na3fFQF-T5WqVwrW0saRXMe2ZRswwjcjpQn61kCObaIKh3o" target="_blank">UberEats</a> เลือกใช้ React ก็หนีไม่พ้นเรื่องการรองรับการใช้งานได้บน Smartphones และ Tablets ซึ่งทำให้ลูกค้า ร้านอาหาร และไรเดอร์ใช้งานได้อย่างสะดวก และมีประสบการณ์ที่ดีในการใช้งานนั่นเอง</p>
+    <div class="mt-2 p-2" >
+        <center>
+        <img  style="width: 50%; height: auto;" src="https://techbriefly.com/wp-content/uploads/2020/10/Uber-Eats-unveils-a-new-design-2.jpg">
+    </center><p class="has-text-centered is-size-7 has-text-grey">UberEats</p>
+</div>
+</div>
+<div class="box m-6 p-5">
+    <p class="is-size-3 has-text-centered has-text-weight-semibold"><mark class="pl-3 pr-3 " style="background-color: #fde98e;">Netflix</mark></p>
+    <p class="mt-6">&emsp;&emsp;เจ้าตลาด Video Streaming เลือกใช้ React ในการพัฒนาเว็บไซต์เพื่อ Redesign User Interface ตั้งแต่ปี 2015 โดยสาเหตุที่ <a href="https://www.netflix.com" target="_blank">Netflix</a> ตัดสินใจเปลี่ยนมาใช้ React เนื่องจากประสิทธิภาพของเว็บที่ได้, ความเร็วในการปล่อย Software, การสามารถแบ่งเป็น Module ย่อยๆในการพัฒนา โดยยังสามารถมี Feature รองรับการเล่นวีดิโอแบบ 4K, HDR และ Dolby Visio</p>
+    <div class="mt-2 p-2" >
+        <center>
+        <img  style="width: 50%; height: auto;" src="https://news.artmotion.com/wp-content/uploads/2020/07/Netflix_TV_interface_current_wm_1594887544385.jpg">
+    </center><p class="has-text-centered is-size-7 has-text-grey">Netflix</p>
+</div>
+</div>
+<div class="box m-6 p-5">
+    <p class="is-size-3 has-text-centered has-text-weight-semibold"><mark class="pl-3 pr-3 " style="background-color: #f7abc7;">Dropbox</mark></p>
+    <p class="mt-6">&emsp;&emsp;เว็บฝากไฟล์เจ้าแรกบนโลกที่ก่อตั้ง และดำเนินกิจการมาตั้งแต่ปี 2012 แต่ก็เจอเข้ากับปัญหาในการพัฒนาเว็บไซต์ จนกระทั่งในปี 2016 <a href="https://www.dropbox.com/" target="_blank">Dropbox</a> เลือกที่จะปรับ Design Library โดยใช้ React ทำ Functions ต่างๆ เพื่อรองรับการทำงาน เช่น การเก็บรวบรวมและการคำนวณขนาดไฟล์ต่างๆ นอกจากนี้ยังมี Features ในการ Show Page ตอนที่ Scroll Down ต่างๆ นอกจากนี้ทีมงาน Dropbox ยังช่วยพัฒนา React และ JS Tools อื่นๆ เพื่อให้ทำงานได้ดีขึ้นบน Web Browser ต่างๆ </p>
+    <div class="mt-2 p-2" >
+        <center>
+        <img  style="width: 50%; height: auto;" src="https://sm.pcmag.com/t/pcmag_au/review/d/dropbox/dropbox_edx5.3840.png">
+    </center><p class="has-text-centered is-size-7 has-text-grey">Dropbox</p>
+</div>
+</div>
+</div>
+<div class="columns">
+    <div class="column">
+        <button
+        class="button is-size-5 bntB1 ml-6"
+        style="
+          background-color: #FDE780;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+          border-radius: 20px;
+        "
+        onclick="location.href='work.html';">
+        การใช้งาน React
+      </button>
+    </div>
+    <div class="column" style="display: flex; justify-content: flex-end">
+        <button
+        class="button is-size-5 bntB2 mr-6"
+        style="
+          background-color:#C9B7DB;
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.45);
+          border-radius: 20px;
+        "
+        onclick="location.href='source.html';">
+        แหล่งที่มาของข้อมูล
+      </button>
+    </div>
+</div>
+<div class="mr-6 mb-6" style="display: flex; justify-content: flex-end">
+   
+  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <img src="logo.png" width="50" height="50" />
+      <p>
+        <strong>จัดทำโดย</strong> นางสาว ชนกนันท์ นุ่มน้อย <strong>รหัสนักศึกษา</strong> 63070027 <br />
+        <strong>ช่องทางการติดต่อ</strong>
+      </p>
+      <a href="https://www.facebook.com/tarunee.madee.5" target="_blank"><img src="facebook.png" width="40" height="40"></a>
+      <a href="https://www.instagram.com/bunny_bell3/" target="_blank"><img src="instagram.png" width="40" height="40"></a>
+    </div>
+  </footer>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+            $target.style.backgroundColor = "#b494c1";
+          });
+        });
+      }
+    });
+
+    $(document).ready(function () {
+      $("#scroll").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: $("#start").offset().top - 10,
+          },
+          1000
+        );
+      });
+    });
+  </script>
+</html>
